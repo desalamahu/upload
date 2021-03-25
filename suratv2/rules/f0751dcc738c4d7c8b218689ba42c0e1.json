@@ -1,0 +1,656 @@
+{
+    "rules": [
+        {
+            "name": "logo",
+            "rule": "[logo]",
+            "status": 0,
+            "inputs": {
+                "id": "#logo",
+                "name": "Logo Kabupaten",
+                "source": "1",
+                "input": "5",
+                "type": "6",
+                "table": "tb_setup",
+                "field": "logo"
+            }
+        },
+        {
+            "name": "NAMA KAB BESAR",
+            "rule": "[NAMA_KAB_BESAR]",
+            "status": 0,
+            "inputs": {
+                "id": "#nama_kabupaten",
+                "name": "Nama Kabupaten",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "tb_setup",
+                "field": "nama_kabupaten"
+            }
+        },
+        {
+            "name": "NAMA KEC BESAR",
+            "rule": "[NAMA_KEC_BESAR]",
+            "status": 0,
+            "inputs": {
+                "id": "#nama_kecamatan",
+                "name": "Nama Kecamatan",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "tb_setup",
+                "field": "nama_kecamatan"
+            }
+        },
+        {
+            "name": "NAMA DESA BESAR",
+            "rule": "[NAMA_DESA_BESAR]",
+            "status": 0,
+            "inputs": {
+                "id": "#nama_desa",
+                "name": "Nama Desa",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "tb_setup",
+                "field": "nama_desa"
+            }
+        },
+        {
+            "name": "alamat des",
+            "rule": "[alamat_des]",
+            "status": 0,
+            "inputs": {
+                "id": "#alamat_desa",
+                "name": "Alamat Desa",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "tb_setup",
+                "field": "alamat_kantor"
+            }
+        },
+        {
+            "name": "hp des",
+            "rule": "[hp_des]",
+            "status": 0,
+            "inputs": {
+                "id": "#telepon_desa",
+                "name": "Telepon Desa",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "tb_setup",
+                "field": "telepon"
+            }
+        },
+        {
+            "name": "email des",
+            "rule": "[email_des]",
+            "status": 0,
+            "inputs": {
+                "id": "#email_desa",
+                "name": "Email Desa",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "tb_setup",
+                "field": "email_desa"
+            }
+        },
+        {
+            "name": "fb des",
+            "rule": "[fb_des]",
+            "status": 0,
+            "inputs": {
+                "id": "#facebook_desa",
+                "name": "Facebook Desa",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "tb_setup",
+                "field": "facebook_desa"
+            }
+        },
+        {
+            "name": "web des",
+            "rule": "[web_des]",
+            "status": 0,
+            "inputs": {
+                "id": "#website_desa",
+                "name": "Website Desa",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "tb_setup",
+                "field": "website"
+            }
+        },
+        {
+            "name": "NOMOR SURAT",
+            "rule": "[NOMOR_SURAT]",
+            "status": 0,
+            "inputs": {
+                "id": "#kode_surat",
+                "name": "Kode Surat",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "template_surat",
+                "field": "no_surat"
+            }
+        },
+        {
+            "name": "NAMA KADES",
+            "rule": "[NAMA_KADES]",
+            "status": 0,
+            "inputs": {
+                "id": "#nama_bertanda_tangan",
+                "name": "Nama Bertanda Tanggan",
+                "source": "1",
+                "input": "2",
+                "type": "5",
+                "table": "tb_pengurus",
+                "field": "nama"
+            }
+        },
+        {
+            "name": "nama des",
+            "rule": "[nama_des]",
+            "status": 0,
+            "inputs": {
+                "id": "#nama_desa",
+                "name": "Nama Desa",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "tb_setup",
+                "field": "nama_desa"
+            }
+        },
+        {
+            "name": "nama kec",
+            "rule": "[nama_kec]",
+            "status": 0,
+            "inputs": {
+                "id": "#nama_kecamatan",
+                "name": "Nama Kecamatan",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "tb_setup",
+                "field": "nama_kecamatan"
+            }
+        },
+        {
+            "name": "nama kab",
+            "rule": "[nama_kab]",
+            "status": 0,
+            "inputs": {
+                "id": "#nama_kabupaten",
+                "name": "Nama Kabupaten",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "tb_setup",
+                "field": "nama_kabupaten"
+            }
+        },
+        {
+            "name": "NAMA PEMOHON",
+            "rule": "[NAMA_PEMOHON]",
+            "status": 1,
+            "inputs": {
+                "id": "#nama_penduduk:text",
+                "name": "Nama Penduduk",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "nama"
+            }
+        },
+        {
+            "name": "NoKK Pemohon",
+            "rule": "[NoKK_Pemohon]",
+            "status": 1,
+            "inputs": {
+                "id": "#no_kk:text",
+                "name": "No KK",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "no_kk"
+            }
+        },
+        {
+            "name": "NoKTP pemohon",
+            "rule": "[NoKTP_pemohon]",
+            "status": 1,
+            "inputs": {
+                "id": "#no_ktp:text",
+                "name": "No ktp",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "nik"
+            }
+        },
+        {
+            "name": "tempat tanggal lahir pemohon",
+            "rule": "[tempat_tanggal_lahir_pemohon]",
+            "status": 1,
+            "inputs": {
+                "id": "#tempat_tanggal_lahir:text",
+                "name": "Tempat Tanggal Lahir",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "tempat_tanggal_lahir"
+            }
+        },
+        {
+            "name": "jenis kelamin pemohon",
+            "rule": "[jenis_kelamin_pemohon]",
+            "status": 1,
+            "inputs": {
+                "id": "#jenis_kelamin:select",
+                "name": "Jenis Kelamin",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "pekerjaan pemohon",
+            "rule": "[pekerjaan_pemohon]",
+            "status": 1,
+            "inputs": {
+                "id": "#pekerjaan:select",
+                "name": "Pekerjaan",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "nama jalan pemohon",
+            "rule": "[nama_jalan_pemohon]",
+            "status": 1,
+            "inputs": {
+                "id": "input:text",
+                "name": "Input Text",
+                "source": "0",
+                "input": "1",
+                "type": "4",
+                "table": "",
+                "field": ""
+            }
+        },
+        {
+            "name": "dusun pemohon",
+            "rule": "[dusun_pemohon]",
+            "status": 1,
+            "inputs": {
+                "id": "#dusun:select",
+                "name": "Dusun",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "nama des pemohon",
+            "rule": "[nama_des_pemohon]",
+            "status": 0,
+            "inputs": {
+                "id": "#nama_desa",
+                "name": "Nama Desa",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "tb_setup",
+                "field": "nama_desa"
+            }
+        },
+        {
+            "name": "nama kec pemohon",
+            "rule": "[nama_kec_pemohon]",
+            "status": 0,
+            "inputs": {
+                "id": "#nama_kecamatan",
+                "name": "Nama Kecamatan",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "tb_setup",
+                "field": "nama_kecamatan"
+            }
+        },
+        {
+            "name": "NAMA ANAK",
+            "rule": "[NAMA_ANAK]",
+            "status": 1,
+            "inputs": {
+                "id": "#nama_penduduk:text",
+                "name": "Nama Penduduk",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "nama"
+            }
+        },
+        {
+            "name": "tempat tanggal lahir anak",
+            "rule": "[tempat_tanggal_lahir_anak]",
+            "status": 1,
+            "inputs": {
+                "id": "#tempat_tanggal_lahir:text",
+                "name": "Tempat Tanggal Lahir",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "tempat_tanggal_lahir"
+            }
+        },
+        {
+            "name": "jenis kelamin anak",
+            "rule": "[jenis_kelamin_anak]",
+            "status": 1,
+            "inputs": {
+                "id": "#jenis_kelamin:select",
+                "name": "Jenis Kelamin",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "jumlah penghasilan dalam angka",
+            "rule": "[jumlah_penghasilan_dalam_angka]",
+            "status": 1,
+            "inputs": {
+                "id": "input:text",
+                "name": "Input Text",
+                "source": "0",
+                "input": "1",
+                "type": "4",
+                "table": "",
+                "field": ""
+            }
+        },
+        {
+            "name": "jumlah penghasilan dalam huruf",
+            "rule": "[jumlah_penghasilan_dalam_huruf]",
+            "status": 1,
+            "inputs": {
+                "id": "input:text",
+                "name": "Input Text",
+                "source": "0",
+                "input": "1",
+                "type": "4",
+                "table": "",
+                "field": ""
+            }
+        },
+        {
+            "name": "qrcode",
+            "rule": "[qrcode]",
+            "status": 0,
+            "inputs": {
+                "id": "#qrcode",
+                "name": "QRCode",
+                "source": "1",
+                "input": "5",
+                "type": "6",
+                "table": "",
+                "field": ""
+            }
+        },
+        {
+            "name": "tanggal surat",
+            "rule": "[tanggal_surat]",
+            "status": 0,
+            "inputs": {
+                "id": "#tgl_surat",
+                "name": "Tanggal Surat",
+                "source": "1",
+                "input": "1",
+                "type": "5",
+                "table": "tb_pengurus",
+                "field": ""
+            }
+        }
+    ],
+    "section": {
+        "6991957a": {
+            "name": "Data Pemohon",
+            "header": 1,
+            "view": 1,
+            "child": [
+                {
+                    "name": "NAMA PEMOHON",
+                    "rule": "[NAMA_PEMOHON]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#nama_penduduk:text",
+                        "name": "Nama Penduduk",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "nama"
+                    },
+                    "index": "14"
+                },
+                {
+                    "name": "NoKK Pemohon",
+                    "rule": "[NoKK_Pemohon]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#no_kk:text",
+                        "name": "No KK",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "no_kk"
+                    },
+                    "index": "15"
+                },
+                {
+                    "name": "NoKTP pemohon",
+                    "rule": "[NoKTP_pemohon]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#no_ktp:text",
+                        "name": "No ktp",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "nik"
+                    },
+                    "index": "16"
+                },
+                {
+                    "name": "tempat tanggal lahir pemohon",
+                    "rule": "[tempat_tanggal_lahir_pemohon]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#tempat_tanggal_lahir:text",
+                        "name": "Tempat Tanggal Lahir",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "tempat_tanggal_lahir"
+                    },
+                    "index": "17"
+                },
+                {
+                    "name": "jenis kelamin pemohon",
+                    "rule": "[jenis_kelamin_pemohon]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#jenis_kelamin:select",
+                        "name": "Jenis Kelamin",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "18"
+                },
+                {
+                    "name": "pekerjaan pemohon",
+                    "rule": "[pekerjaan_pemohon]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#pekerjaan:select",
+                        "name": "Pekerjaan",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "19"
+                },
+                {
+                    "name": "nama jalan pemohon",
+                    "rule": "[nama_jalan_pemohon]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:text",
+                        "name": "Input Text",
+                        "source": "0",
+                        "input": "1",
+                        "type": "4",
+                        "table": "",
+                        "field": ""
+                    },
+                    "index": "20"
+                },
+                {
+                    "name": "dusun pemohon",
+                    "rule": "[dusun_pemohon]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#dusun:select",
+                        "name": "Dusun",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "21"
+                }
+            ]
+        },
+        "077fa772": {
+            "name": "Data Anak",
+            "header": 1,
+            "view": 1,
+            "child": [
+                {
+                    "name": "NAMA ANAK",
+                    "rule": "[NAMA_ANAK]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#nama_penduduk:text",
+                        "name": "Nama Penduduk",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "nama"
+                    },
+                    "index": "24"
+                },
+                {
+                    "name": "tempat tanggal lahir anak",
+                    "rule": "[tempat_tanggal_lahir_anak]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#tempat_tanggal_lahir:text",
+                        "name": "Tempat Tanggal Lahir",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "tempat_tanggal_lahir"
+                    },
+                    "index": "25"
+                },
+                {
+                    "name": "jenis kelamin anak",
+                    "rule": "[jenis_kelamin_anak]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#jenis_kelamin:select",
+                        "name": "Jenis Kelamin",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "26"
+                }
+            ]
+        },
+        "ec658884": {
+            "name": "Data Penghasilan Orang Tua",
+            "header": 0,
+            "view": 1,
+            "child": [
+                {
+                    "name": "jumlah penghasilan dalam angka",
+                    "rule": "[jumlah_penghasilan_dalam_angka]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:text",
+                        "name": "Input Text",
+                        "source": "0",
+                        "input": "1",
+                        "type": "4",
+                        "table": "",
+                        "field": ""
+                    },
+                    "index": "27"
+                },
+                {
+                    "name": "jumlah penghasilan dalam huruf",
+                    "rule": "[jumlah_penghasilan_dalam_huruf]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:text",
+                        "name": "Input Text",
+                        "source": "0",
+                        "input": "1",
+                        "type": "4",
+                        "table": "",
+                        "field": ""
+                    },
+                    "index": "28"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,732 @@
+{
+    "rules": [
+        {
+            "name": "nomor kep",
+            "rule": "[nomor_kep]",
+            "status": 0
+        },
+        {
+            "name": "tahun kep",
+            "rule": "[tahun_kep]",
+            "status": 0
+        },
+        {
+            "name": "nama desa besar",
+            "rule": "[NAMA_DESA_BESAR]",
+            "status": 0,
+            "inputs": {
+                "id": "#nama_desa",
+                "name": "Nama Desa",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "tb_setup",
+                "field": "nama_desa"
+            }
+        },
+        {
+            "name": "nama kec besar",
+            "rule": "[NAMA_KEC_BESAR]",
+            "status": 0,
+            "inputs": {
+                "id": "#nama_kecamatan",
+                "name": "Nama Kecamatan",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "tb_setup",
+                "field": "nama_kecamatan"
+            }
+        },
+        {
+            "name": "nama kab besar",
+            "rule": "[NAMA_KAB_BESAR]",
+            "status": 0,
+            "inputs": {
+                "id": "#nama_kabupaten",
+                "name": "Nama Kabupaten",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "tb_setup",
+                "field": "nama_kabupaten"
+            }
+        },
+        {
+            "name": "format nomor surat",
+            "rule": "[format_nomor_surat]",
+            "status": 0,
+            "inputs": {
+                "id": "#kode_surat",
+                "name": "Kode Surat",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "template_surat",
+                "field": "no_surat"
+            }
+        },
+        {
+            "name": "nama suami\/istri meninggal",
+            "rule": "[nama_suami\/istri_meninggal]",
+            "status": 1,
+            "inputs": {
+                "id": "#nama_penduduk:text",
+                "name": "Nama Penduduk",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "nama"
+            }
+        },
+        {
+            "name": "nama ayah suami\/istri meninggal",
+            "rule": "[nama_ayah_suami\/istri_meninggal]",
+            "status": 1,
+            "inputs": {
+                "id": "#nama_ayah:text",
+                "name": "Nama Ayah",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "nama_ayah"
+            }
+        },
+        {
+            "name": "no ktp suami\/istri meninggal",
+            "rule": "[no_ktp_suami\/istri_meninggal]",
+            "status": 1,
+            "inputs": {
+                "id": "#no_ktp:text",
+                "name": "No ktp",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "nik"
+            }
+        },
+        {
+            "name": "tempat tanggal lahir suami\/istri meninggal",
+            "rule": "[tempat_tanggal_lahir_suami\/istri_meninggal]",
+            "status": 1,
+            "inputs": {
+                "id": "#tempat_tanggal_lahir:text",
+                "name": "Tempat Tanggal Lahir",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "tempat_tanggal_lahir"
+            }
+        },
+        {
+            "name": "kewarganegaraan suami\/istri meninggal",
+            "rule": "[kewarganegaraan_suami\/istri_meninggal]",
+            "status": 1,
+            "inputs": {
+                "id": "#warga_negara:select",
+                "name": "Warga Negara",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "agama suami\/istri meninggal",
+            "rule": "[agama_suami\/istri_meninggal]",
+            "status": 1,
+            "inputs": {
+                "id": "#agama:select",
+                "name": "Agama",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "pekerjaan suami\/istri meninggal",
+            "rule": "[pekerjaan_suami\/istri_meninggal]",
+            "status": 1,
+            "inputs": {
+                "id": "#pekerjaan:select",
+                "name": "Pekerjaan",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "nama desa suami\/istri meninggal",
+            "rule": "[nama_desa_suami\/istri_meninggal]",
+            "status": 0,
+            "inputs": {
+                "id": "#nama_desa",
+                "name": "Nama Desa",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "tb_setup",
+                "field": "nama_desa"
+            }
+        },
+        {
+            "name": "nama kec suami\/istri menggingal",
+            "rule": "[nama_kec_suami\/istri_menggingal]",
+            "status": 0,
+            "inputs": {
+                "id": "#nama_kecamatan",
+                "name": "Nama Kecamatan",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "tb_setup",
+                "field": "nama_kecamatan"
+            }
+        },
+        {
+            "name": "hari wafat",
+            "rule": "[hari_wafat]",
+            "status": 1,
+            "inputs": {
+                "id": "input:select",
+                "name": "Input Select",
+                "source": "0",
+                "input": "2",
+                "type": "4",
+                "table": "",
+                "field": "",
+                "option": [
+                    "Senin",
+                    "Selasa",
+                    "Rabu",
+                    "Kamin",
+                    "Jum'at",
+                    "Sabtu",
+                    "Minggu"
+                ]
+            }
+        },
+        {
+            "name": "tanggal wafat",
+            "rule": "[tanggal_wafat]",
+            "status": 1,
+            "inputs": {
+                "id": "input:date",
+                "name": "Input Date",
+                "source": "0",
+                "input": "3",
+                "type": "4",
+                "table": "",
+                "field": ""
+            }
+        },
+        {
+            "name": "alamat wafat",
+            "rule": "[alamat_wafat]",
+            "status": 1,
+            "inputs": {
+                "id": "input:text",
+                "name": "Input Text",
+                "source": "0",
+                "input": "1",
+                "type": "4",
+                "table": "",
+                "field": ""
+            }
+        },
+        {
+            "name": "nama suami\/istri dari",
+            "rule": "[nama_suami\/istri_dari]",
+            "status": 1,
+            "inputs": {
+                "id": "#nama_penduduk:text",
+                "name": "Nama Penduduk",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "nama"
+            }
+        },
+        {
+            "name": "nama ayah suami\/istri dari",
+            "rule": "[nama_ayah_suami\/istri_dari]",
+            "status": 1,
+            "inputs": {
+                "id": "#nama_ayah:text",
+                "name": "Nama Ayah",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "nama_ayah"
+            }
+        },
+        {
+            "name": "no ktp suami\/istri dari",
+            "rule": "[no_ktp_suami\/istri_dari]",
+            "status": 1,
+            "inputs": {
+                "id": "#no_ktp:text",
+                "name": "No ktp",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "nik"
+            }
+        },
+        {
+            "name": "tempat tanggal lahir suami\/istri dari",
+            "rule": "[tempat_tanggal_lahir_suami\/istri_dari]",
+            "status": 1,
+            "inputs": {
+                "id": "#tempat_tanggal_lahir:text",
+                "name": "Tempat Tanggal Lahir",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "tempat_tanggal_lahir"
+            }
+        },
+        {
+            "name": "kewarganegaraan suami\/istri dari",
+            "rule": "[kewarganegaraan_suami\/istri_dari]",
+            "status": 1,
+            "inputs": {
+                "id": "#warga_negara:select",
+                "name": "Warga Negara",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "agama suami\/istri dari",
+            "rule": "[agama_suami\/istri_dari]",
+            "status": 1,
+            "inputs": {
+                "id": "#agama:select",
+                "name": "Agama",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "pekerjaan suami\/istri dari",
+            "rule": "[pekerjaan_suami\/istri_dari]",
+            "status": 1,
+            "inputs": {
+                "id": "#pekerjaan:select",
+                "name": "Pekerjaan",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "nama desa suami\/istri dari",
+            "rule": "[nama_desa_suami\/istri_dari]",
+            "status": 1,
+            "inputs": {
+                "id": "input:text",
+                "name": "Input Text",
+                "source": "0",
+                "input": "1",
+                "type": "4",
+                "table": "",
+                "field": ""
+            }
+        },
+        {
+            "name": "nama kec suami\/istri dari",
+            "rule": "[nama_kec_suami\/istri_dari]",
+            "status": 1,
+            "inputs": {
+                "id": "input:text",
+                "name": "Input Text",
+                "source": "0",
+                "input": "1",
+                "type": "4",
+                "table": "",
+                "field": ""
+            }
+        },
+        {
+            "name": "nama desa",
+            "rule": "[nama_desa]",
+            "status": 0,
+            "inputs": {
+                "id": "#nama_desa",
+                "name": "Nama Desa",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "tb_setup",
+                "field": "nama_desa"
+            }
+        },
+        {
+            "name": "tanggal surat",
+            "rule": "[tanggal_surat]",
+            "status": 0,
+            "inputs": {
+                "id": "#tgl_surat",
+                "name": "Tanggal Surat",
+                "source": "1",
+                "input": "1",
+                "type": "5",
+                "table": "tb_pengurus",
+                "field": ""
+            }
+        },
+        {
+            "name": "nama kepala desa",
+            "rule": "[nama_kepala_desa]",
+            "status": 0,
+            "inputs": {
+                "id": "#nama_bertanda_tangan",
+                "name": "Nama Bertanda Tanggan",
+                "source": "1",
+                "input": "2",
+                "type": "5",
+                "table": "tb_pengurus",
+                "field": "nama"
+            }
+        }
+    ],
+    "section": {
+        "a0a1b146": {
+            "name": "Kematian Suami\/Istri",
+            "header": 1,
+            "view": 1,
+            "child": [
+                {
+                    "name": "nama suami\/istri meninggal",
+                    "rule": "[nama_suami\/istri_meninggal]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#nama_penduduk:text",
+                        "name": "Nama Penduduk",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "nama"
+                    },
+                    "index": "6"
+                },
+                {
+                    "name": "nama ayah suami\/istri meninggal",
+                    "rule": "[nama_ayah_suami\/istri_meninggal]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#nama_ayah:text",
+                        "name": "Nama Ayah",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "nama_ayah"
+                    },
+                    "index": "7"
+                },
+                {
+                    "name": "no ktp suami\/istri meninggal",
+                    "rule": "[no_ktp_suami\/istri_meninggal]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#no_ktp:text",
+                        "name": "No ktp",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "nik"
+                    },
+                    "index": "8"
+                },
+                {
+                    "name": "tempat tanggal lahir suami\/istri meninggal",
+                    "rule": "[tempat_tanggal_lahir_suami\/istri_meninggal]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#tempat_tanggal_lahir:text",
+                        "name": "Tempat Tanggal Lahir",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "tempat_tanggal_lahir"
+                    },
+                    "index": "9"
+                },
+                {
+                    "name": "kewarganegaraan suami\/istri meninggal",
+                    "rule": "[kewarganegaraan_suami\/istri_meninggal]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#warga_negara:select",
+                        "name": "Warga Negara",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "10"
+                },
+                {
+                    "name": "agama suami\/istri meninggal",
+                    "rule": "[agama_suami\/istri_meninggal]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#agama:select",
+                        "name": "Agama",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "11"
+                },
+                {
+                    "name": "pekerjaan suami\/istri meninggal",
+                    "rule": "[pekerjaan_suami\/istri_meninggal]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#pekerjaan:select",
+                        "name": "Pekerjaan",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "12"
+                }
+            ]
+        },
+        "bbe7bf3e": {
+            "name": "Form Data Kematian",
+            "header": 0,
+            "view": 1,
+            "child": [
+                {
+                    "name": "hari wafat",
+                    "rule": "[hari_wafat]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:select",
+                        "name": "Input Select",
+                        "source": "0",
+                        "input": "2",
+                        "type": "4",
+                        "table": "",
+                        "field": "",
+                        "option": [
+                            "Senin",
+                            "Selasa",
+                            "Rabu",
+                            "Kamin",
+                            "Jum'at",
+                            "Sabtu",
+                            "Minggu"
+                        ]
+                    },
+                    "index": "15"
+                },
+                {
+                    "name": "tanggal wafat",
+                    "rule": "[tanggal_wafat]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:date",
+                        "name": "Input Date",
+                        "source": "0",
+                        "input": "3",
+                        "type": "4",
+                        "table": "",
+                        "field": ""
+                    },
+                    "index": "16"
+                },
+                {
+                    "name": "alamat wafat",
+                    "rule": "[alamat_wafat]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:text",
+                        "name": "Input Text",
+                        "source": "0",
+                        "input": "1",
+                        "type": "4",
+                        "table": "",
+                        "field": ""
+                    },
+                    "index": "17"
+                }
+            ]
+        },
+        "dcad7584": {
+            "name": "Bersangkutan Adalah Suami \/ Istri Dari",
+            "header": 1,
+            "view": 1,
+            "child": [
+                {
+                    "name": "nama suami\/istri dari",
+                    "rule": "[nama_suami\/istri_dari]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#nama_penduduk:text",
+                        "name": "Nama Penduduk",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "nama"
+                    },
+                    "index": "18"
+                },
+                {
+                    "name": "nama ayah suami\/istri dari",
+                    "rule": "[nama_ayah_suami\/istri_dari]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#nama_ayah:text",
+                        "name": "Nama Ayah",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "nama_ayah"
+                    },
+                    "index": "19"
+                },
+                {
+                    "name": "no ktp suami\/istri dari",
+                    "rule": "[no_ktp_suami\/istri_dari]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#no_ktp:text",
+                        "name": "No ktp",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "nik"
+                    },
+                    "index": "20"
+                },
+                {
+                    "name": "tempat tanggal lahir suami\/istri dari",
+                    "rule": "[tempat_tanggal_lahir_suami\/istri_dari]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#tempat_tanggal_lahir:text",
+                        "name": "Tempat Tanggal Lahir",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "tempat_tanggal_lahir"
+                    },
+                    "index": "21"
+                },
+                {
+                    "name": "kewarganegaraan suami\/istri dari",
+                    "rule": "[kewarganegaraan_suami\/istri_dari]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#warga_negara:select",
+                        "name": "Warga Negara",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "22"
+                },
+                {
+                    "name": "agama suami\/istri dari",
+                    "rule": "[agama_suami\/istri_dari]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#agama:select",
+                        "name": "Agama",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "23"
+                },
+                {
+                    "name": "pekerjaan suami\/istri dari",
+                    "rule": "[pekerjaan_suami\/istri_dari]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#pekerjaan:select",
+                        "name": "Pekerjaan",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "24"
+                },
+                {
+                    "name": "nama desa suami\/istri dari",
+                    "rule": "[nama_desa_suami\/istri_dari]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:text",
+                        "name": "Input Text",
+                        "source": "0",
+                        "input": "1",
+                        "type": "4",
+                        "table": "",
+                        "field": ""
+                    },
+                    "index": "25"
+                },
+                {
+                    "name": "nama kec suami\/istri dari",
+                    "rule": "[nama_kec_suami\/istri_dari]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:text",
+                        "name": "Input Text",
+                        "source": "0",
+                        "input": "1",
+                        "type": "4",
+                        "table": "",
+                        "field": ""
+                    },
+                    "index": "26"
+                }
+            ]
+        }
+    }
+}

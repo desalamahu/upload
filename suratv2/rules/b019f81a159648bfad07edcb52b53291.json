@@ -1,0 +1,747 @@
+{
+    "rules": [
+        {
+            "name": "NAMA PEMOHON",
+            "rule": "[NAMA_PEMOHON]",
+            "status": 1,
+            "inputs": {
+                "id": "#nama_penduduk:text",
+                "name": "Nama Penduduk",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "nama"
+            }
+        },
+        {
+            "name": "umur pemohon",
+            "rule": "[umur_pemohon]",
+            "status": 1,
+            "inputs": {
+                "id": "#umur_penduduk:text",
+                "name": "Umur Penduduk",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "umur"
+            }
+        },
+        {
+            "name": "pekerjaan pemohon",
+            "rule": "[pekerjaan_pemohon]",
+            "status": 1,
+            "inputs": {
+                "id": "#pekerjaan:select",
+                "name": "Pekerjaan",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "nama jalan",
+            "rule": "[nama_jalan]",
+            "status": 1,
+            "inputs": {
+                "id": "input:text",
+                "name": "Input Text",
+                "source": "0",
+                "input": "1",
+                "type": "4",
+                "table": "",
+                "field": ""
+            }
+        },
+        {
+            "name": "nama dusun",
+            "rule": "[nama_dusun]",
+            "status": 1,
+            "inputs": {
+                "id": "#dusun_penduduk:text",
+                "name": "Dusun Penduduk",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "dusun_penduduk"
+            }
+        },
+        {
+            "name": "nama desa",
+            "rule": "[nama_desa]",
+            "status": 0,
+            "inputs": {
+                "id": "#nama_desa",
+                "name": "Nama Desa",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "tb_setup",
+                "field": "nama_desa"
+            }
+        },
+        {
+            "name": "nama kec",
+            "rule": "[nama_kec]",
+            "status": 0,
+            "inputs": {
+                "id": "#nama_kecamatan",
+                "name": "Nama Kecamatan",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "tb_setup",
+                "field": "nama_kecamatan"
+            }
+        },
+        {
+            "name": "NAMA ANAK",
+            "rule": "[NAMA_ANAK]",
+            "status": 1,
+            "inputs": {
+                "id": "#nama_penduduk:text",
+                "name": "Nama Penduduk",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "nama"
+            }
+        },
+        {
+            "name": "tempat tanggal lahir anak",
+            "rule": "[tempat_tanggal_lahir_anak]",
+            "status": 1,
+            "inputs": {
+                "id": "#tempat_tanggal_lahir:text",
+                "name": "Tempat Tanggal Lahir",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "tempat_tanggal_lahir"
+            }
+        },
+        {
+            "name": "jenis kelamin anak",
+            "rule": "[jenis_kelamin_anak]",
+            "status": 1,
+            "inputs": {
+                "id": "#jenis_kelamin:select",
+                "name": "Jenis Kelamin",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "anak ke",
+            "rule": "[anak_ke]",
+            "status": 1,
+            "inputs": {
+                "id": "input:text",
+                "name": "Input Text",
+                "source": "0",
+                "input": "1",
+                "type": "4",
+                "table": "",
+                "field": ""
+            }
+        },
+        {
+            "name": "nama ayah",
+            "rule": "[nama_ayah]",
+            "status": 1,
+            "inputs": {
+                "id": "#nama_ayah:text",
+                "name": "Nama Ayah",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "nama_ayah"
+            }
+        },
+        {
+            "name": "pekerjaan ayah",
+            "rule": "[pekerjaan_ayah]",
+            "status": 1,
+            "inputs": {
+                "id": "#pekerjaan_ayah:select",
+                "name": "Pekerjaan Ayah",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "nama ibu",
+            "rule": "[nama_ibu]",
+            "status": 1,
+            "inputs": {
+                "id": "#nama_ibu:text",
+                "name": "Nama Ibu",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "nama_ibu"
+            }
+        },
+        {
+            "name": "pekerjaan ibu",
+            "rule": "[pekerjaan_ibu]",
+            "status": 1,
+            "inputs": {
+                "id": "#pekerjaan_ibu:select",
+                "name": "Pekerjaan Ibu",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "nama kab",
+            "rule": "[nama_kab]",
+            "status": 0,
+            "inputs": {
+                "id": "#nama_kabupaten",
+                "name": "Nama Kabupaten",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "tb_setup",
+                "field": "nama_kabupaten"
+            }
+        },
+        {
+            "name": "NAMA KAB BESAR",
+            "rule": "[NAMA_KAB_BESAR]",
+            "status": 0,
+            "inputs": {
+                "id": "#nama_kabupaten",
+                "name": "Nama Kabupaten",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "tb_setup",
+                "field": "nama_kabupaten"
+            }
+        },
+        {
+            "name": "lokasi dinas capil",
+            "rule": "[lokasi_dinas_capil]",
+            "status": 1,
+            "inputs": {
+                "id": "input:text",
+                "name": "Input Text",
+                "source": "0",
+                "input": "1",
+                "type": "4",
+                "table": "",
+                "field": ""
+            }
+        },
+        {
+            "name": "nama desa kelahiran",
+            "rule": "[nama_desa_kelahiran]",
+            "status": 1,
+            "inputs": {
+                "id": "input:text",
+                "name": "Input Text",
+                "source": "0",
+                "input": "1",
+                "type": "4",
+                "table": "",
+                "field": ""
+            }
+        },
+        {
+            "name": "nama kec kelahiran",
+            "rule": "[nama_kec_kelahiran]",
+            "status": 1,
+            "inputs": {
+                "id": "input:text",
+                "name": "Input Text",
+                "source": "0",
+                "input": "1",
+                "type": "4",
+                "table": "",
+                "field": ""
+            }
+        },
+        {
+            "name": "nama kab kelahiran",
+            "rule": "[nama_kab_kelahiran]",
+            "status": 1,
+            "inputs": {
+                "id": "input:text",
+                "name": "Input Text",
+                "source": "0",
+                "input": "1",
+                "type": "4",
+                "table": "",
+                "field": ""
+            }
+        },
+        {
+            "name": "nama prov kelahiran",
+            "rule": "[nama_prov_kelahiran]",
+            "status": 1,
+            "inputs": {
+                "id": "input:text",
+                "name": "Input Text",
+                "source": "0",
+                "input": "1",
+                "type": "4",
+                "table": "",
+                "field": ""
+            }
+        },
+        {
+            "name": "nama prov",
+            "rule": "[nama_prov]",
+            "status": 0,
+            "inputs": {
+                "id": "#nama_provinsi",
+                "name": "Nama Provinsi",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "tb_setup",
+                "field": "nama_propinsi"
+            }
+        },
+        {
+            "name": "logo",
+            "rule": "[logo]",
+            "status": 0,
+            "inputs": {
+                "id": "#logo",
+                "name": "Logo Kabupaten",
+                "source": "1",
+                "input": "5",
+                "type": "6",
+                "table": "tb_setup",
+                "field": "logo"
+            }
+        },
+        {
+            "name": "NAMA KEC BESAR",
+            "rule": "[NAMA_KEC_BESAR]",
+            "status": 0,
+            "inputs": {
+                "id": "#nama_kecamatan",
+                "name": "Nama Kecamatan",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "tb_setup",
+                "field": "nama_kecamatan"
+            }
+        },
+        {
+            "name": "NAMA DESA BESAR",
+            "rule": "[NAMA_DESA_BESAR]",
+            "status": 0,
+            "inputs": {
+                "id": "#nama_desa",
+                "name": "Nama Desa",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "tb_setup",
+                "field": "nama_desa"
+            }
+        },
+        {
+            "name": "no surat",
+            "rule": "[no_surat]",
+            "status": 0,
+            "inputs": {
+                "id": "#kode_surat",
+                "name": "Kode Surat",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "template_surat",
+                "field": "no_surat"
+            }
+        },
+        {
+            "name": "NAMA CAMAT",
+            "rule": "[NAMA_CAMAT]",
+            "status": 1,
+            "inputs": {
+                "id": "input:text",
+                "name": "Input Text",
+                "source": "0",
+                "input": "1",
+                "type": "4",
+                "table": "",
+                "field": ""
+            }
+        },
+        {
+            "name": "NIP CAMAT",
+            "rule": "[NIP_CAMAT]",
+            "status": 1,
+            "inputs": {
+                "id": "input:text",
+                "name": "Input Text",
+                "source": "0",
+                "input": "1",
+                "type": "4",
+                "table": "",
+                "field": ""
+            }
+        },
+        {
+            "name": "NAMA KEPALA DESA",
+            "rule": "[NAMA_KEPALA_DESA]",
+            "status": 0,
+            "inputs": {
+                "id": "#nama_bertanda_tangan",
+                "name": "Nama Bertanda Tanggan",
+                "source": "1",
+                "input": "2",
+                "type": "5",
+                "table": "tb_pengurus",
+                "field": "nama"
+            }
+        }
+    ],
+    "section": {
+        "72a44174": {
+            "name": "Data Pemohon",
+            "header": 1,
+            "view": 1,
+            "child": [
+                {
+                    "name": "NAMA PEMOHON",
+                    "rule": "[NAMA_PEMOHON]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#nama_penduduk:text",
+                        "name": "Nama Penduduk",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "nama"
+                    },
+                    "index": "0"
+                },
+                {
+                    "name": "umur pemohon",
+                    "rule": "[umur_pemohon]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#umur_penduduk:text",
+                        "name": "Umur Penduduk",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "umur"
+                    },
+                    "index": "1"
+                },
+                {
+                    "name": "pekerjaan pemohon",
+                    "rule": "[pekerjaan_pemohon]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#pekerjaan:select",
+                        "name": "Pekerjaan",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "2"
+                },
+                {
+                    "name": "nama dusun",
+                    "rule": "[nama_dusun]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#dusun_penduduk:text",
+                        "name": "Dusun Penduduk",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "dusun_penduduk"
+                    },
+                    "index": "4"
+                },
+                {
+                    "name": "nama jalan",
+                    "rule": "[nama_jalan]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:text",
+                        "name": "Input Text",
+                        "source": "0",
+                        "input": "1",
+                        "type": "4",
+                        "table": "",
+                        "field": ""
+                    },
+                    "index": "3"
+                }
+            ]
+        },
+        "4fbcc9ff": {
+            "name": "Data Anak",
+            "header": 1,
+            "view": 1,
+            "child": [
+                {
+                    "name": "NAMA ANAK",
+                    "rule": "[NAMA_ANAK]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#nama_penduduk:text",
+                        "name": "Nama Penduduk",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "nama"
+                    },
+                    "index": "7"
+                },
+                {
+                    "name": "tempat tanggal lahir anak",
+                    "rule": "[tempat_tanggal_lahir_anak]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#tempat_tanggal_lahir:text",
+                        "name": "Tempat Tanggal Lahir",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "tempat_tanggal_lahir"
+                    },
+                    "index": "8"
+                },
+                {
+                    "name": "jenis kelamin anak",
+                    "rule": "[jenis_kelamin_anak]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#jenis_kelamin:select",
+                        "name": "Jenis Kelamin",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "9"
+                },
+                {
+                    "name": "anak ke",
+                    "rule": "[anak_ke]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:text",
+                        "name": "Input Text",
+                        "source": "0",
+                        "input": "1",
+                        "type": "4",
+                        "table": "",
+                        "field": ""
+                    },
+                    "index": "10"
+                },
+                {
+                    "name": "nama ayah",
+                    "rule": "[nama_ayah]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#nama_ayah:text",
+                        "name": "Nama Ayah",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "nama_ayah"
+                    },
+                    "index": "11"
+                },
+                {
+                    "name": "pekerjaan ayah",
+                    "rule": "[pekerjaan_ayah]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#pekerjaan_ayah:select",
+                        "name": "Pekerjaan Ayah",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "12"
+                },
+                {
+                    "name": "nama ibu",
+                    "rule": "[nama_ibu]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#nama_ibu:text",
+                        "name": "Nama Ibu",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "nama_ibu"
+                    },
+                    "index": "13"
+                },
+                {
+                    "name": "pekerjaan ibu",
+                    "rule": "[pekerjaan_ibu]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#pekerjaan_ibu:select",
+                        "name": "Pekerjaan Ibu",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "14"
+                },
+                {
+                    "name": "nama desa kelahiran",
+                    "rule": "[nama_desa_kelahiran]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:text",
+                        "name": "Input Text",
+                        "source": "0",
+                        "input": "1",
+                        "type": "4",
+                        "table": "",
+                        "field": ""
+                    },
+                    "index": "18"
+                },
+                {
+                    "name": "nama kec kelahiran",
+                    "rule": "[nama_kec_kelahiran]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:text",
+                        "name": "Input Text",
+                        "source": "0",
+                        "input": "1",
+                        "type": "4",
+                        "table": "",
+                        "field": ""
+                    },
+                    "index": "19"
+                },
+                {
+                    "name": "nama kab kelahiran",
+                    "rule": "[nama_kab_kelahiran]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:text",
+                        "name": "Input Text",
+                        "source": "0",
+                        "input": "1",
+                        "type": "4",
+                        "table": "",
+                        "field": ""
+                    },
+                    "index": "20"
+                },
+                {
+                    "name": "nama prov kelahiran",
+                    "rule": "[nama_prov_kelahiran]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:text",
+                        "name": "Input Text",
+                        "source": "0",
+                        "input": "1",
+                        "type": "4",
+                        "table": "",
+                        "field": ""
+                    },
+                    "index": "21"
+                }
+            ]
+        },
+        "99b6ab93": {
+            "name": "Data Lainnya",
+            "header": 0,
+            "view": 0,
+            "child": [
+                {
+                    "name": "lokasi dinas capil",
+                    "rule": "[lokasi_dinas_capil]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:text",
+                        "name": "Input Text",
+                        "source": "0",
+                        "input": "1",
+                        "type": "4",
+                        "table": "",
+                        "field": ""
+                    },
+                    "index": "17"
+                },
+                {
+                    "name": "NAMA CAMAT",
+                    "rule": "[NAMA_CAMAT]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:text",
+                        "name": "Input Text",
+                        "source": "0",
+                        "input": "1",
+                        "type": "4",
+                        "table": "",
+                        "field": ""
+                    },
+                    "index": "27"
+                },
+                {
+                    "name": "NIP CAMAT",
+                    "rule": "[NIP_CAMAT]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:text",
+                        "name": "Input Text",
+                        "source": "0",
+                        "input": "1",
+                        "type": "4",
+                        "table": "",
+                        "field": ""
+                    },
+                    "index": "28"
+                }
+            ]
+        }
+    }
+}

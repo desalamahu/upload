@@ -1,0 +1,2910 @@
+{
+    "rules": [
+        {
+            "name": "nomor kep",
+            "rule": "[nomor_kep]",
+            "status": 0
+        },
+        {
+            "name": "tahun kep",
+            "rule": "[tahun_kep]",
+            "status": 0
+        },
+        {
+            "name": "nama desa besar",
+            "rule": "[NAMA_DESA_BESAR]",
+            "status": 0,
+            "inputs": {
+                "id": "#nama_desa",
+                "name": "Nama Desa",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "tb_setup",
+                "field": "nama_desa"
+            }
+        },
+        {
+            "name": "nama kec besar",
+            "rule": "[NAMA_KEC_BESAR]",
+            "status": 0,
+            "inputs": {
+                "id": "#nama_kecamatan",
+                "name": "Nama Kecamatan",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "tb_setup",
+                "field": "nama_kecamatan"
+            }
+        },
+        {
+            "name": "nama kab besar",
+            "rule": "[NAMA_KAB_BESAR]",
+            "status": 0,
+            "inputs": {
+                "id": "#nama_kabupaten",
+                "name": "Nama Kabupaten",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "tb_setup",
+                "field": "nama_kabupaten"
+            }
+        },
+        {
+            "name": "format nomor surat",
+            "rule": "[format_nomor_surat]",
+            "status": 0,
+            "inputs": {
+                "id": "#kode_surat",
+                "name": "Kode Surat",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "template_surat",
+                "field": "no_surat"
+            }
+        },
+        {
+            "name": "nama pemohon",
+            "rule": "[nama_pemohon]",
+            "status": 1,
+            "inputs": {
+                "id": "#nama_penduduk:text",
+                "name": "Nama Penduduk",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "nama"
+            }
+        },
+        {
+            "name": "no ktp pemohon",
+            "rule": "[no_ktp_pemohon]",
+            "status": 1,
+            "inputs": {
+                "id": "#no_ktp:text",
+                "name": "No ktp",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "nik"
+            }
+        },
+        {
+            "name": "jenis kelamin pemohon",
+            "rule": "[jenis_kelamin_pemohon]",
+            "status": 1,
+            "inputs": {
+                "id": "#jenis_kelamin:select",
+                "name": "Jenis Kelamin",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "tempat tanggal lahir pemohon",
+            "rule": "[tempat_tanggal_lahir_pemohon]",
+            "status": 1,
+            "inputs": {
+                "id": "#tempat_tanggal_lahir:text",
+                "name": "Tempat Tanggal Lahir",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "tempat_tanggal_lahir"
+            }
+        },
+        {
+            "name": "warganegara pemohon",
+            "rule": "[warganegara_pemohon]",
+            "status": 1,
+            "inputs": {
+                "id": "#warga_negara:select",
+                "name": "Warga Negara",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "agama pemohon",
+            "rule": "[agama_pemohon]",
+            "status": 1,
+            "inputs": {
+                "id": "#agama:select",
+                "name": "Agama",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "pekerjaan pemohon",
+            "rule": "[pekerjaan_pemohon]",
+            "status": 1,
+            "inputs": {
+                "id": "#pekerjaan:select",
+                "name": "Pekerjaan",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "alamat pemohon",
+            "rule": "[alamat_pemohon]",
+            "status": 1,
+            "inputs": {
+                "id": "#alamat_sekarang:text",
+                "name": "Alamat Sekarang",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "alamat_sekarang"
+            }
+        },
+        {
+            "name": "dusun pemohon",
+            "rule": "[dusun_pemohon]",
+            "status": 1,
+            "inputs": {
+                "id": "input:text",
+                "name": "Input Text",
+                "source": "0",
+                "input": "1",
+                "type": "4",
+                "table": "",
+                "field": ""
+            }
+        },
+        {
+            "name": "desa pemohon",
+            "rule": "[desa_pemohon]",
+            "status": 0,
+            "inputs": {
+                "id": "#nama_desa",
+                "name": "Nama Desa",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "tb_setup",
+                "field": "nama_desa"
+            }
+        },
+        {
+            "name": "nama kec pemohon",
+            "rule": "[nama_kec_pemohon]",
+            "status": 0,
+            "inputs": {
+                "id": "#nama_kecamatan",
+                "name": "Nama Kecamatan",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "tb_setup",
+                "field": "nama_kecamatan"
+            }
+        },
+        {
+            "name": "nama kab pemohon",
+            "rule": "[nama_kab_pemohon]",
+            "status": 0,
+            "inputs": {
+                "id": "#nama_kabupaten",
+                "name": "Nama Kabupaten",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "tb_setup",
+                "field": "nama_kabupaten"
+            }
+        },
+        {
+            "name": "status perkawinan pemohon",
+            "rule": "[status_perkawinan_pemohon]",
+            "status": 1,
+            "inputs": {
+                "id": "#status_perkawinan:select",
+                "name": "Status Perkawinan",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "status laki laki",
+            "rule": "[status_laki_laki]",
+            "status": 1,
+            "inputs": {
+                "id": "input:select",
+                "name": "Input Select",
+                "source": "0",
+                "input": "2",
+                "type": "4",
+                "table": "",
+                "field": "",
+                "option": [
+                    "-",
+                    "Jejaka",
+                    "Duda"
+                ]
+            }
+        },
+        {
+            "name": "status perempuan",
+            "rule": "[status_perempuan]",
+            "status": 1,
+            "inputs": {
+                "id": "input:select",
+                "name": "Input Select",
+                "source": "0",
+                "input": "2",
+                "type": "4",
+                "table": "",
+                "field": "",
+                "option": [
+                    "-",
+                    "Perawan",
+                    "Janda"
+                ]
+            }
+        },
+        {
+            "name": "nama istri\/suami terdahulu",
+            "rule": "[nama_istri\/suami_terdahulu]",
+            "status": 1,
+            "inputs": {
+                "id": "input:text",
+                "name": "Input Text",
+                "source": "0",
+                "input": "1",
+                "type": "4",
+                "table": "",
+                "field": ""
+            }
+        },
+        {
+            "name": "nama ayah pemohon",
+            "rule": "[nama_ayah_pemohon]",
+            "status": 1,
+            "inputs": {
+                "id": "#nama_penduduk:text",
+                "name": "Nama Penduduk",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "nama"
+            }
+        },
+        {
+            "name": "nik ayah pemohon",
+            "rule": "[nik_ayah_pemohon]",
+            "status": 1,
+            "inputs": {
+                "id": "#no_ktp:text",
+                "name": "No ktp",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "nik"
+            }
+        },
+        {
+            "name": "tempat tanggal lahir ayah pemohon",
+            "rule": "[tempat_tanggal_lahir_ayah_pemohon]",
+            "status": 1,
+            "inputs": {
+                "id": "#tempat_tanggal_lahir:text",
+                "name": "Tempat Tanggal Lahir",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "tempat_tanggal_lahir"
+            }
+        },
+        {
+            "name": "warganegara ayah pemohon",
+            "rule": "[warganegara_ayah_pemohon]",
+            "status": 1,
+            "inputs": {
+                "id": "#warga_negara:select",
+                "name": "Warga Negara",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "agama ayah pemohon",
+            "rule": "[agama_ayah_pemohon]",
+            "status": 1,
+            "inputs": {
+                "id": "#agama:select",
+                "name": "Agama",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "pekerjaan ayah pemohon",
+            "rule": "[pekerjaan_ayah_pemohon]",
+            "status": 1,
+            "inputs": {
+                "id": "#pekerjaan:select",
+                "name": "Pekerjaan",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "alamat ayah pemohon",
+            "rule": "[alamat_ayah_pemohon]",
+            "status": 1,
+            "inputs": {
+                "id": "#alamat_sekarang:text",
+                "name": "Alamat Sekarang",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "alamat_sekarang"
+            }
+        },
+        {
+            "name": "dusun ayah pemohon",
+            "rule": "[dusun_ayah_pemohon]",
+            "status": 1,
+            "inputs": {
+                "id": "input:text",
+                "name": "Input Text",
+                "source": "0",
+                "input": "1",
+                "type": "4",
+                "table": "",
+                "field": ""
+            }
+        },
+        {
+            "name": "nama desa ayah pemohon",
+            "rule": "[nama_desa_ayah_pemohon]",
+            "status": 0,
+            "inputs": {
+                "id": "#nama_desa",
+                "name": "Nama Desa",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "tb_setup",
+                "field": "nama_desa"
+            }
+        },
+        {
+            "name": "nama kec ayah pemohon",
+            "rule": "[nama_kec_ayah_pemohon]",
+            "status": 0,
+            "inputs": {
+                "id": "#nama_kecamatan",
+                "name": "Nama Kecamatan",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "tb_setup",
+                "field": "nama_kecamatan"
+            }
+        },
+        {
+            "name": "nama kab ayah pemohon",
+            "rule": "[nama_kab_ayah_pemohon]",
+            "status": 0,
+            "inputs": {
+                "id": "#nama_kabupaten",
+                "name": "Nama Kabupaten",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "tb_setup",
+                "field": "nama_kabupaten"
+            }
+        },
+        {
+            "name": "nama ibu pemohon",
+            "rule": "[nama_ibu_pemohon]",
+            "status": 1,
+            "inputs": {
+                "id": "#nama_penduduk:text",
+                "name": "Nama Penduduk",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "nama"
+            }
+        },
+        {
+            "name": "nik ibu pemohon",
+            "rule": "[nik_ibu_pemohon]",
+            "status": 1,
+            "inputs": {
+                "id": "#no_ktp:text",
+                "name": "No ktp",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "nik"
+            }
+        },
+        {
+            "name": "tempat tanggal lahir ibu pemohon",
+            "rule": "[tempat_tanggal_lahir_ibu_pemohon]",
+            "status": 1,
+            "inputs": {
+                "id": "#tempat_tanggal_lahir:text",
+                "name": "Tempat Tanggal Lahir",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "tempat_tanggal_lahir"
+            }
+        },
+        {
+            "name": "warganegara ibu pemohon",
+            "rule": "[warganegara_ibu_pemohon]",
+            "status": 1,
+            "inputs": {
+                "id": "#warga_negara:select",
+                "name": "Warga Negara",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "agama ibu pemohon",
+            "rule": "[agama_ibu_pemohon]",
+            "status": 1,
+            "inputs": {
+                "id": "#agama:select",
+                "name": "Agama",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "pekerjaan ibu pemohon",
+            "rule": "[pekerjaan_ibu_pemohon]",
+            "status": 1,
+            "inputs": {
+                "id": "#pekerjaan:select",
+                "name": "Pekerjaan",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "alamat ibu pemohon",
+            "rule": "[alamat_ibu_pemohon]",
+            "status": 1,
+            "inputs": {
+                "id": "#alamat_sekarang:text",
+                "name": "Alamat Sekarang",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "alamat_sekarang"
+            }
+        },
+        {
+            "name": "dusun ibu pemohon",
+            "rule": "[dusun_ibu_pemohon]",
+            "status": 1,
+            "inputs": {
+                "id": "input:text",
+                "name": "Input Text",
+                "source": "0",
+                "input": "1",
+                "type": "4",
+                "table": "",
+                "field": ""
+            }
+        },
+        {
+            "name": "nama desa ibu pemohon",
+            "rule": "[nama_desa_ibu_pemohon]",
+            "status": 0,
+            "inputs": {
+                "id": "#nama_desa",
+                "name": "Nama Desa",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "tb_setup",
+                "field": "nama_desa"
+            }
+        },
+        {
+            "name": "nama kec ibu pemohon",
+            "rule": "[nama_kec_ibu_pemohon]",
+            "status": 0,
+            "inputs": {
+                "id": "#nama_kecamatan",
+                "name": "Nama Kecamatan",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "tb_setup",
+                "field": "nama_kecamatan"
+            }
+        },
+        {
+            "name": "nama kab ibu pemohon",
+            "rule": "[nama_kab_ibu_pemohon]",
+            "status": 0,
+            "inputs": {
+                "id": "#nama_kabupaten",
+                "name": "Nama Kabupaten",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "tb_setup",
+                "field": "nama_kabupaten"
+            }
+        },
+        {
+            "name": "nama desa",
+            "rule": "[nama_desa]",
+            "status": 0,
+            "inputs": {
+                "id": "#nama_desa",
+                "name": "Nama Desa",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "tb_setup",
+                "field": "nama_desa"
+            }
+        },
+        {
+            "name": "tanggal surat",
+            "rule": "[tanggal_surat]",
+            "status": 0,
+            "inputs": {
+                "id": "#tgl_surat",
+                "name": "Tanggal Surat",
+                "source": "1",
+                "input": "1",
+                "type": "5",
+                "table": "tb_pengurus",
+                "field": ""
+            }
+        },
+        {
+            "name": "penandatangan",
+            "rule": "[penandatangan]",
+            "status": 0
+        },
+        {
+            "name": "nama penandatangan",
+            "rule": "[nama_penandatangan]",
+            "status": 0
+        },
+        {
+            "name": "nama kec kua",
+            "rule": "[nama_kec_kua]",
+            "status": 0,
+            "inputs": {
+                "id": "#nama_kecamatan",
+                "name": "Nama Kecamatan",
+                "source": "1",
+                "input": "0",
+                "type": "1",
+                "table": "tb_setup",
+                "field": "nama_kecamatan"
+            }
+        },
+        {
+            "name": "nama calon suami",
+            "rule": "[nama_calon_suami]",
+            "status": 1,
+            "inputs": {
+                "id": "input:text",
+                "name": "Input Text",
+                "source": "0",
+                "input": "1",
+                "type": "4",
+                "table": "",
+                "field": ""
+            }
+        },
+        {
+            "name": "nama calon istri",
+            "rule": "[nama_calon_istri]",
+            "status": 1,
+            "inputs": {
+                "id": "input:text",
+                "name": "Input Text",
+                "source": "0",
+                "input": "1",
+                "type": "4",
+                "table": "",
+                "field": ""
+            }
+        },
+        {
+            "name": "hari",
+            "rule": "[hari]",
+            "status": 1,
+            "inputs": {
+                "id": "input:select",
+                "name": "Input Select",
+                "source": "0",
+                "input": "2",
+                "type": "4",
+                "table": "",
+                "field": "",
+                "option": [
+                    "Senin",
+                    "Selasa",
+                    "Rabu",
+                    "Kamis",
+                    "Jum'at",
+                    "Sabtu",
+                    "Minggu"
+                ]
+            }
+        },
+        {
+            "name": "tanggal pelakanaan",
+            "rule": "[tanggal_pelakanaan]",
+            "status": 1,
+            "inputs": {
+                "id": "input:date",
+                "name": "Input Date",
+                "source": "0",
+                "input": "3",
+                "type": "4",
+                "table": "",
+                "field": ""
+            }
+        },
+        {
+            "name": "jam pelaksanaan",
+            "rule": "[jam_pelaksanaan]",
+            "status": 1,
+            "inputs": {
+                "id": "input:text",
+                "name": "Input Text",
+                "source": "0",
+                "input": "1",
+                "type": "4",
+                "table": "",
+                "field": ""
+            }
+        },
+        {
+            "name": "tempat akat",
+            "rule": "[tempat_akat]",
+            "status": 1,
+            "inputs": {
+                "id": "input:text",
+                "name": "Input Text",
+                "source": "0",
+                "input": "1",
+                "type": "4",
+                "table": "",
+                "field": ""
+            }
+        },
+        {
+            "name": "tgl terima berkas",
+            "rule": "[tgl_terima_berkas]",
+            "status": 1,
+            "inputs": {
+                "id": "input:date",
+                "name": "Input Date",
+                "source": "0",
+                "input": "3",
+                "type": "4",
+                "table": "",
+                "field": ""
+            }
+        },
+        {
+            "name": "nama penerima berkas",
+            "rule": "[nama_penerima_berkas]",
+            "status": 1,
+            "inputs": {
+                "id": "input:text",
+                "name": "Input Text",
+                "source": "0",
+                "input": "1",
+                "type": "4",
+                "table": "",
+                "field": ""
+            }
+        },
+        {
+            "name": "nama kepala kua",
+            "rule": "[nama_kepala_kua]",
+            "status": 1,
+            "inputs": {
+                "id": "input:text",
+                "name": "Input Text",
+                "source": "0",
+                "input": "1",
+                "type": "4",
+                "table": "",
+                "field": ""
+            }
+        },
+        {
+            "name": "nama ayah calon suami",
+            "rule": "[nama_ayah_calon_suami]",
+            "status": 1,
+            "inputs": {
+                "id": "#nama_ayah:text",
+                "name": "Nama Ayah",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "nama_ayah"
+            }
+        },
+        {
+            "name": "no ktp calon suami",
+            "rule": "[no_ktp_calon_suami]",
+            "status": 1,
+            "inputs": {
+                "id": "#no_ktp:text",
+                "name": "No ktp",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "nik"
+            }
+        },
+        {
+            "name": "tempat tanggal lahir calon suami",
+            "rule": "[tempat_tanggal_lahir_calon_suami]",
+            "status": 1,
+            "inputs": {
+                "id": "#tempat_tanggal_lahir:text",
+                "name": "Tempat Tanggal Lahir",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "tempat_tanggal_lahir"
+            }
+        },
+        {
+            "name": "kewarganegaraan calon suami",
+            "rule": "[kewarganegaraan_calon_suami]",
+            "status": 1,
+            "inputs": {
+                "id": "#warga_negara:select",
+                "name": "Warga Negara",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "agama calon suami",
+            "rule": "[agama_calon_suami]",
+            "status": 1,
+            "inputs": {
+                "id": "#agama:select",
+                "name": "Agama",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "pekerjaan calon suami",
+            "rule": "[pekerjaan_calon_suami]",
+            "status": 1,
+            "inputs": {
+                "id": "#pekerjaan:select",
+                "name": "Pekerjaan",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "desa calon suami",
+            "rule": "[desa_calon_suami]",
+            "status": 1,
+            "inputs": {
+                "id": "input:text",
+                "name": "Input Text",
+                "source": "0",
+                "input": "1",
+                "type": "4",
+                "table": "",
+                "field": ""
+            }
+        },
+        {
+            "name": "kec calon suami",
+            "rule": "[kec_calon_suami]",
+            "status": 1,
+            "inputs": {
+                "id": "input:text",
+                "name": "Input Text",
+                "source": "0",
+                "input": "1",
+                "type": "4",
+                "table": "",
+                "field": ""
+            }
+        },
+        {
+            "name": "nama ayah calon istri",
+            "rule": "[nama_ayah_calon_istri]",
+            "status": 1,
+            "inputs": {
+                "id": "#nama_ayah:text",
+                "name": "Nama Ayah",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "nama_ayah"
+            }
+        },
+        {
+            "name": "no ktp calon istri",
+            "rule": "[no_ktp_calon_istri]",
+            "status": 1,
+            "inputs": {
+                "id": "#no_ktp:text",
+                "name": "No ktp",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "nik"
+            }
+        },
+        {
+            "name": "tempat tangga lahir calon istri",
+            "rule": "[tempat_tangga_lahir_calon_istri]",
+            "status": 1,
+            "inputs": {
+                "id": "#tempat_tanggal_lahir:text",
+                "name": "Tempat Tanggal Lahir",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "tempat_tanggal_lahir"
+            }
+        },
+        {
+            "name": "kewarganegaraan calon istri",
+            "rule": "[kewarganegaraan_calon_istri]",
+            "status": 1,
+            "inputs": {
+                "id": "#warga_negara:select",
+                "name": "Warga Negara",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "agama calon istri",
+            "rule": "[agama_calon_istri]",
+            "status": 1,
+            "inputs": {
+                "id": "#agama:select",
+                "name": "Agama",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "pekerjaan calon istri",
+            "rule": "[pekerjaan_calon_istri]",
+            "status": 1,
+            "inputs": {
+                "id": "#pekerjaan:select",
+                "name": "Pekerjaan",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "desa calon istri",
+            "rule": "[desa_calon_istri]",
+            "status": 1,
+            "inputs": {
+                "id": "input:text",
+                "name": "Input Text",
+                "source": "0",
+                "input": "1",
+                "type": "4",
+                "table": "",
+                "field": ""
+            }
+        },
+        {
+            "name": "kec calon istri",
+            "rule": "[kec_calon_istri]",
+            "status": 1,
+            "inputs": {
+                "id": "input:text",
+                "name": "Input Text",
+                "source": "0",
+                "input": "1",
+                "type": "4",
+                "table": "",
+                "field": ""
+            }
+        },
+        {
+            "name": "nama kakek dari ayah calon istri",
+            "rule": "[nama_kakek_dari_ayah_calon_istri]",
+            "status": 1,
+            "inputs": {
+                "id": "#nama_ayah:text",
+                "name": "Nama Ayah",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "nama_ayah"
+            }
+        },
+        {
+            "name": "no ktp ayah calon istri",
+            "rule": "[no_ktp_ayah_calon_istri]",
+            "status": 1,
+            "inputs": {
+                "id": "#no_ktp:text",
+                "name": "No ktp",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "nik"
+            }
+        },
+        {
+            "name": "tempat tanggal lahir ayah calon istri",
+            "rule": "[tempat_tanggal_lahir_ayah_calon_istri]",
+            "status": 1,
+            "inputs": {
+                "id": "#tempat_tanggal_lahir:text",
+                "name": "Tempat Tanggal Lahir",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "tempat_tanggal_lahir"
+            }
+        },
+        {
+            "name": "kewarganegaraan ayah calon istri",
+            "rule": "[kewarganegaraan_ayah_calon_istri]",
+            "status": 1,
+            "inputs": {
+                "id": "#warga_negara:select",
+                "name": "Warga Negara",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "agama ayah calon istri",
+            "rule": "[agama_ayah_calon_istri]",
+            "status": 1,
+            "inputs": {
+                "id": "#agama:select",
+                "name": "Agama",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "pekerjaan ayah calon istri",
+            "rule": "[pekerjaan_ayah_calon_istri]",
+            "status": 1,
+            "inputs": {
+                "id": "#pekerjaan:select",
+                "name": "Pekerjaan",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "desa ayah calon istri",
+            "rule": "[desa_ayah_calon_istri]",
+            "status": 1,
+            "inputs": {
+                "id": "input:text",
+                "name": "Input Text",
+                "source": "0",
+                "input": "1",
+                "type": "4",
+                "table": "",
+                "field": ""
+            }
+        },
+        {
+            "name": "kec ayah calon istri",
+            "rule": "[kec_ayah_calon_istri]",
+            "status": 1,
+            "inputs": {
+                "id": "input:text",
+                "name": "Input Text",
+                "source": "0",
+                "input": "1",
+                "type": "4",
+                "table": "",
+                "field": ""
+            }
+        },
+        {
+            "name": "nama kakek dari ibu calon istri",
+            "rule": "[nama_kakek_dari_ibu_calon_istri]",
+            "status": 1,
+            "inputs": {
+                "id": "#nama_ayah:text",
+                "name": "Nama Ayah",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "nama_ayah"
+            }
+        },
+        {
+            "name": "nama ibu calon istri",
+            "rule": "[nama_ibu_calon_istri]",
+            "status": 1,
+            "inputs": {
+                "id": "#nama_penduduk:text",
+                "name": "Nama Penduduk",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "nama"
+            }
+        },
+        {
+            "name": "no ktp ibu calon istri",
+            "rule": "[no_ktp_ibu_calon_istri]",
+            "status": 1,
+            "inputs": {
+                "id": "#no_ktp:text",
+                "name": "No ktp",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "nik"
+            }
+        },
+        {
+            "name": "tempat tanggal lahir ibu calon istri",
+            "rule": "[tempat_tanggal_lahir_ibu_calon_istri]",
+            "status": 1,
+            "inputs": {
+                "id": "#tempat_tanggal_lahir:text",
+                "name": "Tempat Tanggal Lahir",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "tempat_tanggal_lahir"
+            }
+        },
+        {
+            "name": "kewarganegaraan ibu calon istri",
+            "rule": "[kewarganegaraan_ibu_calon_istri]",
+            "status": 1,
+            "inputs": {
+                "id": "#warga_negara:select",
+                "name": "Warga Negara",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "agama ibu calon istri",
+            "rule": "[agama_ibu_calon_istri]",
+            "status": 1,
+            "inputs": {
+                "id": "#agama:select",
+                "name": "Agama",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "pekerjaan ibu calon istri",
+            "rule": "[pekerjaan_ibu_calon_istri]",
+            "status": 1,
+            "inputs": {
+                "id": "#pekerjaan:select",
+                "name": "Pekerjaan",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "desa ibu calon istri",
+            "rule": "[desa_ibu_calon_istri]",
+            "status": 1,
+            "inputs": {
+                "id": "input:text",
+                "name": "Input Text",
+                "source": "0",
+                "input": "1",
+                "type": "4",
+                "table": "",
+                "field": ""
+            }
+        },
+        {
+            "name": "kec ibu calon istri",
+            "rule": "[kec_ibu_calon_istri]",
+            "status": 1,
+            "inputs": {
+                "id": "input:text",
+                "name": "Input Text",
+                "source": "0",
+                "input": "1",
+                "type": "4",
+                "table": "",
+                "field": ""
+            }
+        },
+        {
+            "name": "nama kakek dari ayah calon suami",
+            "rule": "[nama_kakek_dari_ayah_calon_suami]",
+            "status": 1,
+            "inputs": {
+                "id": "#nama_ayah:text",
+                "name": "Nama Ayah",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "nama_ayah"
+            }
+        },
+        {
+            "name": "desa ayah calon suami",
+            "rule": "[desa_ayah_calon_suami]",
+            "status": 1,
+            "inputs": {
+                "id": "input:text",
+                "name": "Input Text",
+                "source": "0",
+                "input": "1",
+                "type": "4",
+                "table": "",
+                "field": ""
+            }
+        },
+        {
+            "name": "kec ayah calon suami",
+            "rule": "[kec_ayah_calon_suami]",
+            "status": 1,
+            "inputs": {
+                "id": "input:text",
+                "name": "Input Text",
+                "source": "0",
+                "input": "1",
+                "type": "4",
+                "table": "",
+                "field": ""
+            }
+        },
+        {
+            "name": "nama ibu calon suami",
+            "rule": "[nama_ibu_calon_suami]",
+            "status": 1,
+            "inputs": {
+                "id": "#nama_penduduk:text",
+                "name": "Nama Penduduk",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "nama"
+            }
+        },
+        {
+            "name": "no ktp ibu calon suami",
+            "rule": "[no_ktp_ibu_calon_suami]",
+            "status": 1,
+            "inputs": {
+                "id": "#no_ktp:text",
+                "name": "No ktp",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "nik"
+            }
+        },
+        {
+            "name": "tempat tanggal lahir ibu calon suami",
+            "rule": "[tempat_tanggal_lahir_ibu_calon_suami]",
+            "status": 1,
+            "inputs": {
+                "id": "#tempat_tanggal_lahir:text",
+                "name": "Tempat Tanggal Lahir",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "tempat_tanggal_lahir"
+            }
+        },
+        {
+            "name": "kewarganegaraan ibu calon suami",
+            "rule": "[kewarganegaraan_ibu_calon_suami]",
+            "status": 1,
+            "inputs": {
+                "id": "#warga_negara:select",
+                "name": "Warga Negara",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "agama ibu calon suami",
+            "rule": "[agama_ibu_calon_suami]",
+            "status": 1,
+            "inputs": {
+                "id": "#agama:select",
+                "name": "Agama",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "pekerjaan ibu calon suami",
+            "rule": "[pekerjaan_ibu_calon_suami]",
+            "status": 1,
+            "inputs": {
+                "id": "#pekerjaan:select",
+                "name": "Pekerjaan",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "desa ibu calon suami",
+            "rule": "[desa_ibu_calon_suami]",
+            "status": 1,
+            "inputs": {
+                "id": "input:text",
+                "name": "Input Text",
+                "source": "0",
+                "input": "1",
+                "type": "4",
+                "table": "",
+                "field": ""
+            }
+        },
+        {
+            "name": "kec ibu calon suami",
+            "rule": "[kec_ibu_calon_suami]",
+            "status": 1,
+            "inputs": {
+                "id": "input:text",
+                "name": "Input Text",
+                "source": "0",
+                "input": "1",
+                "type": "4",
+                "table": "",
+                "field": ""
+            }
+        },
+        {
+            "name": "nama kakek dari ibu calon suami",
+            "rule": "[nama_kakek_dari_ibu_calon_suami]",
+            "status": 1,
+            "inputs": {
+                "id": "#nama_ayah:text",
+                "name": "Nama Ayah",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "nama_ayah"
+            }
+        },
+        {
+            "name": "no ktp ayah calon suami",
+            "rule": "[no_ktp_ayah_calon_suami]",
+            "status": 1,
+            "inputs": {
+                "id": "#no_ktp:text",
+                "name": "No ktp",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "nik"
+            }
+        },
+        {
+            "name": "tempat tanggal lahir ayah calon suami",
+            "rule": "[tempat_tanggal_lahir_ayah_calon_suami]",
+            "status": 1,
+            "inputs": {
+                "id": "#tempat_tanggal_lahir:text",
+                "name": "Tempat Tanggal Lahir",
+                "source": "1",
+                "input": "1",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": "tempat_tanggal_lahir"
+            }
+        },
+        {
+            "name": "kewarganegaraan ayah calon suami",
+            "rule": "[kewarganegaraan_ayah_calon_suami]",
+            "status": 1,
+            "inputs": {
+                "id": "#warga_negara:select",
+                "name": "Warga Negara",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "agama ayah calon suami",
+            "rule": "[agama_ayah_calon_suami]",
+            "status": 1,
+            "inputs": {
+                "id": "#agama:select",
+                "name": "Agama",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        },
+        {
+            "name": "pekerjaan ayah calon suami",
+            "rule": "[pekerjaan_ayah_calon_suami]",
+            "status": 1,
+            "inputs": {
+                "id": "#pekerjaan:select",
+                "name": "Pekerjaan",
+                "source": "1",
+                "input": "2",
+                "type": "2",
+                "table": "tb_penduduk",
+                "field": ""
+            }
+        }
+    ],
+    "section": {
+        "d56eae81": {
+            "name": "Data Pemohon N1",
+            "header": 1,
+            "view": 1,
+            "child": [
+                {
+                    "name": "nama pemohon",
+                    "rule": "[nama_pemohon]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#nama_penduduk:text",
+                        "name": "Nama Penduduk",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "nama"
+                    },
+                    "index": "6"
+                },
+                {
+                    "name": "no ktp pemohon",
+                    "rule": "[no_ktp_pemohon]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#no_ktp:text",
+                        "name": "No ktp",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "nik"
+                    },
+                    "index": "7"
+                },
+                {
+                    "name": "jenis kelamin pemohon",
+                    "rule": "[jenis_kelamin_pemohon]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#jenis_kelamin:select",
+                        "name": "Jenis Kelamin",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "8"
+                },
+                {
+                    "name": "tempat tanggal lahir pemohon",
+                    "rule": "[tempat_tanggal_lahir_pemohon]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#tempat_tanggal_lahir:text",
+                        "name": "Tempat Tanggal Lahir",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "tempat_tanggal_lahir"
+                    },
+                    "index": "9"
+                },
+                {
+                    "name": "warganegara pemohon",
+                    "rule": "[warganegara_pemohon]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#warga_negara:select",
+                        "name": "Warga Negara",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "10"
+                },
+                {
+                    "name": "agama pemohon",
+                    "rule": "[agama_pemohon]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#agama:select",
+                        "name": "Agama",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "11"
+                },
+                {
+                    "name": "pekerjaan pemohon",
+                    "rule": "[pekerjaan_pemohon]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#pekerjaan:select",
+                        "name": "Pekerjaan",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "12"
+                },
+                {
+                    "name": "alamat pemohon",
+                    "rule": "[alamat_pemohon]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#alamat_sekarang:text",
+                        "name": "Alamat Sekarang",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "alamat_sekarang"
+                    },
+                    "index": "13"
+                },
+                {
+                    "name": "dusun pemohon",
+                    "rule": "[dusun_pemohon]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:text",
+                        "name": "Input Text",
+                        "source": "0",
+                        "input": "1",
+                        "type": "4",
+                        "table": "",
+                        "field": ""
+                    },
+                    "index": "14"
+                },
+                {
+                    "name": "status perkawinan pemohon",
+                    "rule": "[status_perkawinan_pemohon]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#status_perkawinan:select",
+                        "name": "Status Perkawinan",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "18"
+                },
+                {
+                    "name": "status laki laki",
+                    "rule": "[status_laki_laki]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:select",
+                        "name": "Input Select",
+                        "source": "0",
+                        "input": "2",
+                        "type": "4",
+                        "table": "",
+                        "field": "",
+                        "option": [
+                            "-",
+                            "Jejaka",
+                            "Duda"
+                        ]
+                    },
+                    "index": "19"
+                },
+                {
+                    "name": "status perempuan",
+                    "rule": "[status_perempuan]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:select",
+                        "name": "Input Select",
+                        "source": "0",
+                        "input": "2",
+                        "type": "4",
+                        "table": "",
+                        "field": "",
+                        "option": [
+                            "-",
+                            "Perawan",
+                            "Janda"
+                        ]
+                    },
+                    "index": "20"
+                },
+                {
+                    "name": "nama istri\/suami terdahulu",
+                    "rule": "[nama_istri\/suami_terdahulu]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:text",
+                        "name": "Input Text",
+                        "source": "0",
+                        "input": "1",
+                        "type": "4",
+                        "table": "",
+                        "field": ""
+                    },
+                    "index": "21"
+                }
+            ]
+        },
+        "26aeac9d": {
+            "name": "Data Ayah Pemohon N1",
+            "header": 1,
+            "view": 1,
+            "child": [
+                {
+                    "name": "nama ayah pemohon",
+                    "rule": "[nama_ayah_pemohon]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#nama_penduduk:text",
+                        "name": "Nama Penduduk",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "nama"
+                    },
+                    "index": "22"
+                },
+                {
+                    "name": "nik ayah pemohon",
+                    "rule": "[nik_ayah_pemohon]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#no_ktp:text",
+                        "name": "No ktp",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "nik"
+                    },
+                    "index": "23"
+                },
+                {
+                    "name": "tempat tanggal lahir ayah pemohon",
+                    "rule": "[tempat_tanggal_lahir_ayah_pemohon]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#tempat_tanggal_lahir:text",
+                        "name": "Tempat Tanggal Lahir",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "tempat_tanggal_lahir"
+                    },
+                    "index": "24"
+                },
+                {
+                    "name": "warganegara ayah pemohon",
+                    "rule": "[warganegara_ayah_pemohon]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#warga_negara:select",
+                        "name": "Warga Negara",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "25"
+                },
+                {
+                    "name": "agama ayah pemohon",
+                    "rule": "[agama_ayah_pemohon]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#agama:select",
+                        "name": "Agama",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "26"
+                },
+                {
+                    "name": "pekerjaan ayah pemohon",
+                    "rule": "[pekerjaan_ayah_pemohon]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#pekerjaan:select",
+                        "name": "Pekerjaan",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "27"
+                },
+                {
+                    "name": "alamat ayah pemohon",
+                    "rule": "[alamat_ayah_pemohon]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#alamat_sekarang:text",
+                        "name": "Alamat Sekarang",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "alamat_sekarang"
+                    },
+                    "index": "28"
+                },
+                {
+                    "name": "dusun ayah pemohon",
+                    "rule": "[dusun_ayah_pemohon]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:text",
+                        "name": "Input Text",
+                        "source": "0",
+                        "input": "1",
+                        "type": "4",
+                        "table": "",
+                        "field": ""
+                    },
+                    "index": "29"
+                }
+            ]
+        },
+        "a9cf610d": {
+            "name": "Data Ibu Pemohon N1",
+            "header": 1,
+            "view": 1,
+            "child": [
+                {
+                    "name": "nama ibu pemohon",
+                    "rule": "[nama_ibu_pemohon]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#nama_penduduk:text",
+                        "name": "Nama Penduduk",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "nama"
+                    },
+                    "index": "33"
+                },
+                {
+                    "name": "nik ibu pemohon",
+                    "rule": "[nik_ibu_pemohon]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#no_ktp:text",
+                        "name": "No ktp",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "nik"
+                    },
+                    "index": "34"
+                },
+                {
+                    "name": "tempat tanggal lahir ibu pemohon",
+                    "rule": "[tempat_tanggal_lahir_ibu_pemohon]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#tempat_tanggal_lahir:text",
+                        "name": "Tempat Tanggal Lahir",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "tempat_tanggal_lahir"
+                    },
+                    "index": "35"
+                },
+                {
+                    "name": "warganegara ibu pemohon",
+                    "rule": "[warganegara_ibu_pemohon]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#warga_negara:select",
+                        "name": "Warga Negara",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "36"
+                },
+                {
+                    "name": "agama ibu pemohon",
+                    "rule": "[agama_ibu_pemohon]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#agama:select",
+                        "name": "Agama",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "37"
+                },
+                {
+                    "name": "pekerjaan ibu pemohon",
+                    "rule": "[pekerjaan_ibu_pemohon]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#pekerjaan:select",
+                        "name": "Pekerjaan",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "38"
+                },
+                {
+                    "name": "alamat ibu pemohon",
+                    "rule": "[alamat_ibu_pemohon]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#alamat_sekarang:text",
+                        "name": "Alamat Sekarang",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "alamat_sekarang"
+                    },
+                    "index": "39"
+                },
+                {
+                    "name": "dusun ibu pemohon",
+                    "rule": "[dusun_ibu_pemohon]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:text",
+                        "name": "Input Text",
+                        "source": "0",
+                        "input": "1",
+                        "type": "4",
+                        "table": "",
+                        "field": ""
+                    },
+                    "index": "40"
+                }
+            ]
+        },
+        "1d1405d8": {
+            "name": "Permohonan Kehendak Nikah N2",
+            "header": 0,
+            "view": 1,
+            "child": [
+                {
+                    "name": "nama calon suami",
+                    "rule": "[nama_calon_suami]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:text",
+                        "name": "Input Text",
+                        "source": "0",
+                        "input": "1",
+                        "type": "4",
+                        "table": "",
+                        "field": ""
+                    },
+                    "index": "49"
+                },
+                {
+                    "name": "nama calon istri",
+                    "rule": "[nama_calon_istri]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:text",
+                        "name": "Input Text",
+                        "source": "0",
+                        "input": "1",
+                        "type": "4",
+                        "table": "",
+                        "field": ""
+                    },
+                    "index": "50"
+                },
+                {
+                    "name": "hari",
+                    "rule": "[hari]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:select",
+                        "name": "Input Select",
+                        "source": "0",
+                        "input": "2",
+                        "type": "4",
+                        "table": "",
+                        "field": "",
+                        "option": [
+                            "Senin",
+                            "Selasa",
+                            "Rabu",
+                            "Kamis",
+                            "Jum'at",
+                            "Sabtu",
+                            "Minggu"
+                        ]
+                    },
+                    "index": "51"
+                },
+                {
+                    "name": "tanggal pelakanaan",
+                    "rule": "[tanggal_pelakanaan]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:date",
+                        "name": "Input Date",
+                        "source": "0",
+                        "input": "3",
+                        "type": "4",
+                        "table": "",
+                        "field": ""
+                    },
+                    "index": "52"
+                },
+                {
+                    "name": "jam pelaksanaan",
+                    "rule": "[jam_pelaksanaan]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:text",
+                        "name": "Input Text",
+                        "source": "0",
+                        "input": "1",
+                        "type": "4",
+                        "table": "",
+                        "field": ""
+                    },
+                    "index": "53"
+                },
+                {
+                    "name": "tempat akat",
+                    "rule": "[tempat_akat]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:text",
+                        "name": "Input Text",
+                        "source": "0",
+                        "input": "1",
+                        "type": "4",
+                        "table": "",
+                        "field": ""
+                    },
+                    "index": "54"
+                },
+                {
+                    "name": "tgl terima berkas",
+                    "rule": "[tgl_terima_berkas]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:date",
+                        "name": "Input Date",
+                        "source": "0",
+                        "input": "3",
+                        "type": "4",
+                        "table": "",
+                        "field": ""
+                    },
+                    "index": "55"
+                },
+                {
+                    "name": "nama penerima berkas",
+                    "rule": "[nama_penerima_berkas]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:text",
+                        "name": "Input Text",
+                        "source": "0",
+                        "input": "1",
+                        "type": "4",
+                        "table": "",
+                        "field": ""
+                    },
+                    "index": "56"
+                },
+                {
+                    "name": "nama kepala kua",
+                    "rule": "[nama_kepala_kua]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:text",
+                        "name": "Input Text",
+                        "source": "0",
+                        "input": "1",
+                        "type": "4",
+                        "table": "",
+                        "field": ""
+                    },
+                    "index": "57"
+                }
+            ]
+        },
+        "db7682ed": {
+            "name": "Persetujuan Calon Pengantin Pria N4",
+            "header": 1,
+            "view": 1,
+            "child": [
+                {
+                    "name": "nama ayah calon suami",
+                    "rule": "[nama_ayah_calon_suami]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#nama_ayah:text",
+                        "name": "Nama Ayah",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "nama_ayah"
+                    },
+                    "index": "58"
+                },
+                {
+                    "name": "no ktp calon suami",
+                    "rule": "[no_ktp_calon_suami]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#no_ktp:text",
+                        "name": "No ktp",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "nik"
+                    },
+                    "index": "59"
+                },
+                {
+                    "name": "tempat tanggal lahir calon suami",
+                    "rule": "[tempat_tanggal_lahir_calon_suami]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#tempat_tanggal_lahir:text",
+                        "name": "Tempat Tanggal Lahir",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "tempat_tanggal_lahir"
+                    },
+                    "index": "60"
+                },
+                {
+                    "name": "kewarganegaraan calon suami",
+                    "rule": "[kewarganegaraan_calon_suami]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#warga_negara:select",
+                        "name": "Warga Negara",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "61"
+                },
+                {
+                    "name": "agama calon suami",
+                    "rule": "[agama_calon_suami]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#agama:select",
+                        "name": "Agama",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "62"
+                },
+                {
+                    "name": "pekerjaan calon suami",
+                    "rule": "[pekerjaan_calon_suami]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#pekerjaan:select",
+                        "name": "Pekerjaan",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "63"
+                },
+                {
+                    "name": "desa calon suami",
+                    "rule": "[desa_calon_suami]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:text",
+                        "name": "Input Text",
+                        "source": "0",
+                        "input": "1",
+                        "type": "4",
+                        "table": "",
+                        "field": ""
+                    },
+                    "index": "64"
+                },
+                {
+                    "name": "kec calon suami",
+                    "rule": "[kec_calon_suami]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:text",
+                        "name": "Input Text",
+                        "source": "0",
+                        "input": "1",
+                        "type": "4",
+                        "table": "",
+                        "field": ""
+                    },
+                    "index": "65"
+                }
+            ]
+        },
+        "ce013f7d": {
+            "name": "Persetujuan Calon Pengantin Wanita N4",
+            "header": 1,
+            "view": 1,
+            "child": [
+                {
+                    "name": "nama ayah calon istri",
+                    "rule": "[nama_ayah_calon_istri]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#nama_ayah:text",
+                        "name": "Nama Ayah",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "nama_ayah"
+                    },
+                    "index": "66"
+                },
+                {
+                    "name": "no ktp calon istri",
+                    "rule": "[no_ktp_calon_istri]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#no_ktp:text",
+                        "name": "No ktp",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "nik"
+                    },
+                    "index": "67"
+                },
+                {
+                    "name": "tempat tangga lahir calon istri",
+                    "rule": "[tempat_tangga_lahir_calon_istri]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#tempat_tanggal_lahir:text",
+                        "name": "Tempat Tanggal Lahir",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "tempat_tanggal_lahir"
+                    },
+                    "index": "68"
+                },
+                {
+                    "name": "kewarganegaraan calon istri",
+                    "rule": "[kewarganegaraan_calon_istri]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#warga_negara:select",
+                        "name": "Warga Negara",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "69"
+                },
+                {
+                    "name": "agama calon istri",
+                    "rule": "[agama_calon_istri]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#agama:select",
+                        "name": "Agama",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "70"
+                },
+                {
+                    "name": "pekerjaan calon istri",
+                    "rule": "[pekerjaan_calon_istri]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#pekerjaan:select",
+                        "name": "Pekerjaan",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "71"
+                },
+                {
+                    "name": "desa calon istri",
+                    "rule": "[desa_calon_istri]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:text",
+                        "name": "Input Text",
+                        "source": "0",
+                        "input": "1",
+                        "type": "4",
+                        "table": "",
+                        "field": ""
+                    },
+                    "index": "72"
+                },
+                {
+                    "name": "kec calon istri",
+                    "rule": "[kec_calon_istri]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:text",
+                        "name": "Input Text",
+                        "source": "0",
+                        "input": "1",
+                        "type": "4",
+                        "table": "",
+                        "field": ""
+                    },
+                    "index": "73"
+                }
+            ]
+        },
+        "de58d2ce": {
+            "name": "IZIN ORANG TUA AYAH CALON ISTRI N5",
+            "header": 1,
+            "view": 1,
+            "child": [
+                {
+                    "name": "nama kakek dari ayah calon istri",
+                    "rule": "[nama_kakek_dari_ayah_calon_istri]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#nama_ayah:text",
+                        "name": "Nama Ayah",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "nama_ayah"
+                    },
+                    "index": "74"
+                },
+                {
+                    "name": "no ktp ayah calon istri",
+                    "rule": "[no_ktp_ayah_calon_istri]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#no_ktp:text",
+                        "name": "No ktp",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "nik"
+                    },
+                    "index": "75"
+                },
+                {
+                    "name": "tempat tanggal lahir ayah calon istri",
+                    "rule": "[tempat_tanggal_lahir_ayah_calon_istri]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#tempat_tanggal_lahir:text",
+                        "name": "Tempat Tanggal Lahir",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "tempat_tanggal_lahir"
+                    },
+                    "index": "76"
+                },
+                {
+                    "name": "kewarganegaraan ayah calon istri",
+                    "rule": "[kewarganegaraan_ayah_calon_istri]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#warga_negara:select",
+                        "name": "Warga Negara",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "77"
+                },
+                {
+                    "name": "agama ayah calon istri",
+                    "rule": "[agama_ayah_calon_istri]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#agama:select",
+                        "name": "Agama",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "78"
+                },
+                {
+                    "name": "pekerjaan ayah calon istri",
+                    "rule": "[pekerjaan_ayah_calon_istri]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#pekerjaan:select",
+                        "name": "Pekerjaan",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "79"
+                },
+                {
+                    "name": "desa ayah calon istri",
+                    "rule": "[desa_ayah_calon_istri]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:text",
+                        "name": "Input Text",
+                        "source": "0",
+                        "input": "1",
+                        "type": "4",
+                        "table": "",
+                        "field": ""
+                    },
+                    "index": "80"
+                },
+                {
+                    "name": "kec ayah calon istri",
+                    "rule": "[kec_ayah_calon_istri]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:text",
+                        "name": "Input Text",
+                        "source": "0",
+                        "input": "1",
+                        "type": "4",
+                        "table": "",
+                        "field": ""
+                    },
+                    "index": "81"
+                }
+            ]
+        },
+        "503f37a8": {
+            "name": "IZIN ORANG TUA IBU CALON ISTRI N5",
+            "header": 1,
+            "view": 1,
+            "child": [
+                {
+                    "name": "nama kakek dari ibu calon istri",
+                    "rule": "[nama_kakek_dari_ibu_calon_istri]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#nama_ayah:text",
+                        "name": "Nama Ayah",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "nama_ayah"
+                    },
+                    "index": "82"
+                },
+                {
+                    "name": "nama ibu calon istri",
+                    "rule": "[nama_ibu_calon_istri]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#nama_penduduk:text",
+                        "name": "Nama Penduduk",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "nama"
+                    },
+                    "index": "83"
+                },
+                {
+                    "name": "no ktp ibu calon istri",
+                    "rule": "[no_ktp_ibu_calon_istri]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#no_ktp:text",
+                        "name": "No ktp",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "nik"
+                    },
+                    "index": "84"
+                },
+                {
+                    "name": "tempat tanggal lahir ibu calon istri",
+                    "rule": "[tempat_tanggal_lahir_ibu_calon_istri]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#tempat_tanggal_lahir:text",
+                        "name": "Tempat Tanggal Lahir",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "tempat_tanggal_lahir"
+                    },
+                    "index": "85"
+                },
+                {
+                    "name": "kewarganegaraan ibu calon istri",
+                    "rule": "[kewarganegaraan_ibu_calon_istri]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#warga_negara:select",
+                        "name": "Warga Negara",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "86"
+                },
+                {
+                    "name": "agama ibu calon istri",
+                    "rule": "[agama_ibu_calon_istri]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#agama:select",
+                        "name": "Agama",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "87"
+                },
+                {
+                    "name": "pekerjaan ibu calon istri",
+                    "rule": "[pekerjaan_ibu_calon_istri]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#pekerjaan:select",
+                        "name": "Pekerjaan",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "88"
+                },
+                {
+                    "name": "desa ibu calon istri",
+                    "rule": "[desa_ibu_calon_istri]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:text",
+                        "name": "Input Text",
+                        "source": "0",
+                        "input": "1",
+                        "type": "4",
+                        "table": "",
+                        "field": ""
+                    },
+                    "index": "89"
+                },
+                {
+                    "name": "kec ibu calon istri",
+                    "rule": "[kec_ibu_calon_istri]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:text",
+                        "name": "Input Text",
+                        "source": "0",
+                        "input": "1",
+                        "type": "4",
+                        "table": "",
+                        "field": ""
+                    },
+                    "index": "90"
+                }
+            ]
+        },
+        "f24fa542": {
+            "name": "IZIN ORANG TUA AYAH CALON SUAMI N5",
+            "header": 1,
+            "view": 1,
+            "child": [
+                {
+                    "name": "nama kakek dari ayah calon suami",
+                    "rule": "[nama_kakek_dari_ayah_calon_suami]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#nama_ayah:text",
+                        "name": "Nama Ayah",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "nama_ayah"
+                    },
+                    "index": "91"
+                },
+                {
+                    "name": "no ktp ayah calon suami",
+                    "rule": "[no_ktp_ayah_calon_suami]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#no_ktp:text",
+                        "name": "No ktp",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "nik"
+                    },
+                    "index": "103"
+                },
+                {
+                    "name": "tempat tanggal lahir ayah calon suami",
+                    "rule": "[tempat_tanggal_lahir_ayah_calon_suami]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#tempat_tanggal_lahir:text",
+                        "name": "Tempat Tanggal Lahir",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "tempat_tanggal_lahir"
+                    },
+                    "index": "104"
+                },
+                {
+                    "name": "kewarganegaraan ayah calon suami",
+                    "rule": "[kewarganegaraan_ayah_calon_suami]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#warga_negara:select",
+                        "name": "Warga Negara",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "105"
+                },
+                {
+                    "name": "agama ayah calon suami",
+                    "rule": "[agama_ayah_calon_suami]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#agama:select",
+                        "name": "Agama",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "106"
+                },
+                {
+                    "name": "pekerjaan ayah calon suami",
+                    "rule": "[pekerjaan_ayah_calon_suami]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#pekerjaan:select",
+                        "name": "Pekerjaan",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "107"
+                },
+                {
+                    "name": "desa ayah calon suami",
+                    "rule": "[desa_ayah_calon_suami]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:text",
+                        "name": "Input Text",
+                        "source": "0",
+                        "input": "1",
+                        "type": "4",
+                        "table": "",
+                        "field": ""
+                    },
+                    "index": "92"
+                },
+                {
+                    "name": "kec ayah calon suami",
+                    "rule": "[kec_ayah_calon_suami]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:text",
+                        "name": "Input Text",
+                        "source": "0",
+                        "input": "1",
+                        "type": "4",
+                        "table": "",
+                        "field": ""
+                    },
+                    "index": "93"
+                }
+            ]
+        },
+        "07adc577": {
+            "name": "IZIN ORANG TUA IBU CALON SUAMI N5",
+            "header": 1,
+            "view": 1,
+            "child": [
+                {
+                    "name": "nama kakek dari ibu calon suami",
+                    "rule": "[nama_kakek_dari_ibu_calon_suami]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#nama_ayah:text",
+                        "name": "Nama Ayah",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "nama_ayah"
+                    },
+                    "index": "102"
+                },
+                {
+                    "name": "nama ibu calon suami",
+                    "rule": "[nama_ibu_calon_suami]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#nama_penduduk:text",
+                        "name": "Nama Penduduk",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "nama"
+                    },
+                    "index": "94"
+                },
+                {
+                    "name": "no ktp ibu calon suami",
+                    "rule": "[no_ktp_ibu_calon_suami]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#no_ktp:text",
+                        "name": "No ktp",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "nik"
+                    },
+                    "index": "95"
+                },
+                {
+                    "name": "tempat tanggal lahir ibu calon suami",
+                    "rule": "[tempat_tanggal_lahir_ibu_calon_suami]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#tempat_tanggal_lahir:text",
+                        "name": "Tempat Tanggal Lahir",
+                        "source": "1",
+                        "input": "1",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": "tempat_tanggal_lahir"
+                    },
+                    "index": "96"
+                },
+                {
+                    "name": "kewarganegaraan ibu calon suami",
+                    "rule": "[kewarganegaraan_ibu_calon_suami]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#warga_negara:select",
+                        "name": "Warga Negara",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "97"
+                },
+                {
+                    "name": "agama ibu calon suami",
+                    "rule": "[agama_ibu_calon_suami]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#agama:select",
+                        "name": "Agama",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "98"
+                },
+                {
+                    "name": "pekerjaan ibu calon suami",
+                    "rule": "[pekerjaan_ibu_calon_suami]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "#pekerjaan:select",
+                        "name": "Pekerjaan",
+                        "source": "1",
+                        "input": "2",
+                        "type": "2",
+                        "table": "tb_penduduk",
+                        "field": ""
+                    },
+                    "index": "99"
+                },
+                {
+                    "name": "desa ibu calon suami",
+                    "rule": "[desa_ibu_calon_suami]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:text",
+                        "name": "Input Text",
+                        "source": "0",
+                        "input": "1",
+                        "type": "4",
+                        "table": "",
+                        "field": ""
+                    },
+                    "index": "100"
+                },
+                {
+                    "name": "kec ibu calon suami",
+                    "rule": "[kec_ibu_calon_suami]",
+                    "status": 1,
+                    "inputs": {
+                        "id": "input:text",
+                        "name": "Input Text",
+                        "source": "0",
+                        "input": "1",
+                        "type": "4",
+                        "table": "",
+                        "field": ""
+                    },
+                    "index": "101"
+                }
+            ]
+        }
+    }
+}
