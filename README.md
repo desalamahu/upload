@@ -1,2 +1,2 @@
 # upload
-upload is tikades user directory
+upload is tikades user directorys
